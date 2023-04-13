@@ -12,4 +12,3 @@ if [ -n ${JOURNAL} ]; then
 else
     echo "ERROR: Env var (JOURNAL) not set"
 fi
-
