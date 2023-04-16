@@ -1,32 +1,14 @@
-Bash shell scripts used for Unix as an IDE.
-
-- Add `/opt/sh` to `$PATH`.
-- Install using `make install`
-- Remove using `make clean`
-- Reload shell `source ~/.zshrc`
-
-Setup Zettelkasten environment.
+Bash shell scripts used for [Unix as an IDE]().
 
 ```shell
-export SCRIPT_PATH=/opt/sh
+export SCRIPT=/opt/sh
 
 # Setup script environment
-mkdir -p $SCRIPT_PATH
+mkdir -p $SCRIPT
 
 # Install specific script
-ln -sf $PWD/zd $SCRIPT_PATH
+ln -sf $PWD/<SCRIPT_NAME> $SCRIPT
 
 # Clean scripts installed
-rm -rf $SCRIPT_PATH
-```
-
-```shell
-# Set journal path
-export JOURNAL=$HOME/github.com/zk-journal
-
-# Create daily note
-zs.sh
-
-# Create weekly note
-zw.sh
+rm -rf $SCRIPT
 ```
