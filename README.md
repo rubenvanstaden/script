@@ -7,7 +7,7 @@ Bash shell scripts used for [Unix as an IDE](https://github.com/rubenvanstaden/z
 > mkdir -p $SCRIPT
 
 # Install specific script
-> ln -sf $PWD/[SCRIPT_NAME] $SCRIPT
+> ln -sf $PWD/[SCRIPT_NAME] $SCRIPT/[SCRIPT_NAME].sh
 
 # Clean scripts installed
 > rm -rf $SCRIPT
