@@ -1,4 +1,4 @@
-Bash shell scripts used for [Unix as an IDE]().
+Bash shell scripts used for [Unix as an IDE](https://github.com/rubenvanstaden/zlib/blob/main/slipbox/202304061649.md).
 
 ```shell
 > export SCRIPT=/opt/sh
