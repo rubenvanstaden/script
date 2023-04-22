@@ -12,3 +12,13 @@ Bash shell scripts used for [Unix as an IDE](https://github.com/rubenvanstaden/z
 # Clean scripts installed
 > rm -rf $SCRIPT
 ```
+
+- When writting a new script.
+
+```shell
+# Linking
+shellcheck [script].sh
+
+# Formatting
+shfmt [script].sh
+```
