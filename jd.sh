@@ -3,12 +3,13 @@
 set -e
 
 create() {
-	uuid=$(date +'%Y-%m-%d')
+    local past=$1
+	uuid=$(date -v -${past}d +'%Y-%m-%d')
 	$EDITOR "${JOURNAL}/daily/${uuid}.md"
 }
 
 if [[ -n "$JOURNAL" ]]; then
-	create
+	create $1
 else
 	echo "ERROR: env var $JOURNAL not set"
 fi
