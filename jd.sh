@@ -10,5 +10,5 @@ create() {
 if [[ -n "$JOURNAL" ]]; then
 	create
 else
-	echo "ERROR: Env var (JOURNAL) not set"
+	echo "ERROR: env var $JOURNAL not set"
 fi
