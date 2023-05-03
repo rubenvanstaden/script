@@ -1,7 +1,6 @@
-diff:
-	cp "$(HOME)/.bashrc" bashrc
+install: sh zet snip
 
-install:
+sh:
 	ln -sf $(PWD)/bashrc.sh $(SCRIPT)/rc
 	ln -sf $(PWD)/reload.sh $(SCRIPT)/reload
 	ln -sf $(PWD)/path.sh $(SCRIPT)/path
@@ -15,6 +14,9 @@ zet:
 	ln -sf $(PWD)/zettel-last.sh $(SCRIPT)/zl
 
 snip:
+	ln -sf $(PWD)/bash-here-doc.sh $(SCRIPT)/bash-here-doc
 	ln -sf $(PWD)/md-title.sh $(SCRIPT)/md-title
 	ln -sf $(PWD)/c-malloc.sh $(SCRIPT)/c-malloc
+	ln -sf $(PWD)/c-main.sh $(SCRIPT)/c-main
 	ln -sf $(PWD)/c-assert-array.sh $(SCRIPT)/c-assert-array
+	ln -sf $(PWD)/c-swap.sh $(SCRIPT)/c-swap
