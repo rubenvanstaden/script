@@ -14,6 +14,7 @@ zet:
 	ln -sf $(PWD)/journal-week.sh $(SCRIPT)/jw
 	ln -sf $(PWD)/zettel-new.sh $(SCRIPT)/zn
 	ln -sf $(PWD)/zettel-last.sh $(SCRIPT)/zl
+	ln -sf $(PWD)/zettel-search.sh $(SCRIPT)/zs
 
 bash:
 	ln -sf $(PWD)/bash-here-doc.sh $(SCRIPT)/bash-here-doc
