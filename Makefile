@@ -8,14 +8,15 @@ sh:
 	ln -sf $(PWD)/doc.sh $(SCRIPT)/doc
 	ln -sf $(PWD)/cmt.sh $(SCRIPT)/cmt
 	ln -sf $(PWD)/ex.sh $(SCRIPT)/ex
+	ln -sf $(PWD)/vimcheat.sh $(SCRIPT)/vimcheat
 
 zet:
-	ln -sf $(PWD)/md-title.sh $(SCRIPT)/md-title
 	ln -sf $(PWD)/journal-day.sh $(SCRIPT)/jd
 	ln -sf $(PWD)/journal-week.sh $(SCRIPT)/jw
 	ln -sf $(PWD)/zettel-new.sh $(SCRIPT)/zn
 	ln -sf $(PWD)/zettel-last.sh $(SCRIPT)/zl
 	ln -sf $(PWD)/zettel-search.sh $(SCRIPT)/zs
+	ln -sf $(PWD)/zettel-title.sh $(SCRIPT)/zt
 
 bash:
 	ln -sf $(PWD)/sh-shebang.sh $(SCRIPT)/shebang
