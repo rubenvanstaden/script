@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 while IFS= read -r line; do
     echo "${1:-#} $line"

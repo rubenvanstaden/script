@@ -4,9 +4,10 @@ sh:
 	ln -sf $(PWD)/bashrc.sh $(SCRIPT)/rc
 	ln -sf $(PWD)/reload.sh $(SCRIPT)/reload
 	ln -sf $(PWD)/path.sh $(SCRIPT)/path
-	ln -sf $(PWD)/shebang.sh $(SCRIPT)/shebang
 	ln -sf $(PWD)/reload.sh $(SCRIPT)/reload
 	ln -sf $(PWD)/doc.sh $(SCRIPT)/doc
+	ln -sf $(PWD)/cmt.sh $(SCRIPT)/cmt
+	ln -sf $(PWD)/ex.sh $(SCRIPT)/ex
 
 zet:
 	ln -sf $(PWD)/md-title.sh $(SCRIPT)/md-title
@@ -17,8 +18,9 @@ zet:
 	ln -sf $(PWD)/zettel-search.sh $(SCRIPT)/zs
 
 bash:
-	ln -sf $(PWD)/bash-here-doc.sh $(SCRIPT)/bash-here-doc
-	ln -sf $(PWD)/bash-temp.sh $(SCRIPT)/bash-temp
+	ln -sf $(PWD)/sh-shebang.sh $(SCRIPT)/shebang
+	ln -sf $(PWD)/sh-here.sh $(SCRIPT)/here
+	ln -sf $(PWD)/script-new.sh $(SCRIPT)/sn
 
 c:
 	ln -sf $(PWD)/c-malloc.sh $(SCRIPT)/c-malloc
@@ -27,14 +29,19 @@ c:
 	ln -sf $(PWD)/c-swap.sh $(SCRIPT)/c-swap
 
 cpp:
+	ln -sf $(PWD)/cpp-build.sh $(SCRIPT)/cpp-build
 	ln -sf $(PWD)/cpp-tree-node.sh $(SCRIPT)/cpp-tree-node
 	ln -sf $(PWD)/cpp-tree-bfs.sh $(SCRIPT)/cpp-tree-bfs
 	ln -sf $(PWD)/cpp-tree-test.sh $(SCRIPT)/cpp-tree-test
 	ln -sf $(PWD)/cpp-main.sh $(SCRIPT)/cpp-main
 	ln -sf $(PWD)/cpp-queue.sh $(SCRIPT)/cpp-queue
+	ln -sf $(PWD)/cpp-prefix-sum.sh $(SCRIPT)/cpp-prefix-sum
+	ln -sf $(PWD)/cpp-two-pointer.sh $(SCRIPT)/cpp-two-pointer
+	ln -sf $(PWD)/cpp-sliding-window.sh $(SCRIPT)/cpp-sliding-window
+	ln -sf $(PWD)/cpp-binary-search.sh $(SCRIPT)/cpp-binary-search
 
 rust:
-	ln -sf $(PWD)/rust-test.sh $(SCRIPT)/rust-test
+	ln -sf $(PWD)/rs-test.sh $(SCRIPT)/rs-test
 
 snip:
 	ln -sf $(PWD)/bit-ops.sh $(SCRIPT)/bit-ops

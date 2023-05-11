@@ -1,6 +1,17 @@
 #!/usr/bin/env bash
 
-cat << "EOF"
+set -e
+
+[[ -z $SK ]] && echo "SK env var not set" && exit 1
+
+if [ "$#" -ne 1 ]; then
+	echo "Usage: $0 <filename>"
+	exit 1
+fi
+
+file="${SK}/${1}.sh"
+
+cat >"$file" <<"EOF"
 #!/usr/bin/env bash
 #
 # Description and purpose of script.
@@ -21,3 +32,7 @@ fn
 
 exit 0
 EOF
+
+chmod +x "$file"
+
+"$EDITOR" "$file"
