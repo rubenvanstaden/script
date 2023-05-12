@@ -4,11 +4,10 @@ sh:
 	ln -sf $(PWD)/bashrc.sh $(SCRIPT)/rc
 	ln -sf $(PWD)/reload.sh $(SCRIPT)/reload
 	ln -sf $(PWD)/path.sh $(SCRIPT)/path
-	ln -sf $(PWD)/reload.sh $(SCRIPT)/reload
 	ln -sf $(PWD)/doc.sh $(SCRIPT)/doc
 	ln -sf $(PWD)/cmt.sh $(SCRIPT)/cmt
 	ln -sf $(PWD)/ex.sh $(SCRIPT)/ex
-	ln -sf $(PWD)/vimcheat.sh $(SCRIPT)/vimcheat
+	ln -sf $(PWD)/cheat-vim.sh $(SCRIPT)/cv
 
 zet:
 	ln -sf $(PWD)/journal-day.sh $(SCRIPT)/jd
@@ -16,7 +15,7 @@ zet:
 	ln -sf $(PWD)/zettel-new.sh $(SCRIPT)/zn
 	ln -sf $(PWD)/zettel-last.sh $(SCRIPT)/zl
 	ln -sf $(PWD)/zettel-search.sh $(SCRIPT)/zs
-	ln -sf $(PWD)/zettel-title.sh $(SCRIPT)/zt
+	ln -sf $(PWD)/zettel-tags.sh $(SCRIPT)/zt
 
 bash:
 	ln -sf $(PWD)/sh-shebang.sh $(SCRIPT)/shebang
