@@ -42,6 +42,7 @@ cpp:
 
 rust:
 	ln -sf $(PWD)/rs-test.sh $(SCRIPT)/rs-test
+	ln -sf $(PWD)/rs-graph.sh $(SCRIPT)/rs-graph
 
 snip:
 	ln -sf $(PWD)/bit-ops.sh $(SCRIPT)/bit-ops

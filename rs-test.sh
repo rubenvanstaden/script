@@ -7,7 +7,6 @@ mod test {
 
     #[test]
     fn test() {
-        assert_eq!();
     }
 }
 EOF
