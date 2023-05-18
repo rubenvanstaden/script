@@ -1,4 +1,4 @@
-install: sh zet bash c cpp rust snip
+install: sh zet bash c cpp rust snip go
 
 sh:
 	ln -sf $(PWD)/bashrc.sh $(SCRIPT)/rc
@@ -8,6 +8,7 @@ sh:
 	ln -sf $(PWD)/cmt.sh $(SCRIPT)/cmt
 	ln -sf $(PWD)/ex.sh $(SCRIPT)/ex
 	ln -sf $(PWD)/cheat-vim.sh $(SCRIPT)/cv
+	ln -sf $(PWD)/cheat-tmux.sh $(SCRIPT)/ct
 
 zet:
 	ln -sf $(PWD)/journal-day.sh $(SCRIPT)/jd
@@ -16,6 +17,7 @@ zet:
 	ln -sf $(PWD)/zettel-last.sh $(SCRIPT)/zl
 	ln -sf $(PWD)/zettel-search.sh $(SCRIPT)/zs
 	ln -sf $(PWD)/zettel-tags.sh $(SCRIPT)/zt
+	ln -sf $(PWD)/filter-tag.sh $(SCRIPT)/ft
 
 bash:
 	ln -sf $(PWD)/sh-shebang.sh $(SCRIPT)/shebang
@@ -27,6 +29,10 @@ c:
 	ln -sf $(PWD)/c-main.sh $(SCRIPT)/c-main
 	ln -sf $(PWD)/c-assert-array.sh $(SCRIPT)/c-assert-array
 	ln -sf $(PWD)/c-swap.sh $(SCRIPT)/c-swap
+
+go:
+	ln -sf $(PWD)/go-test-table.sh $(SCRIPT)/go-test-table
+	ln -sf $(PWD)/go-test-table-1.sh $(SCRIPT)/go-test-table-1
 
 cpp:
 	ln -sf $(PWD)/cpp-build.sh $(SCRIPT)/cpp-build
