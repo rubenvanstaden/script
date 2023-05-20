@@ -9,6 +9,7 @@ sh:
 	ln -sf $(PWD)/ex.sh $(SCRIPT)/ex
 	ln -sf $(PWD)/cheat-vim.sh $(SCRIPT)/cv
 	ln -sf $(PWD)/cheat-tmux.sh $(SCRIPT)/ct
+	ln -sf $(PWD)/cheat-ledger.sh $(SCRIPT)/cl
 
 zet:
 	ln -sf $(PWD)/journal-day.sh $(SCRIPT)/jd
