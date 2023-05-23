@@ -32,7 +32,8 @@ c:
 	ln -sf $(PWD)/c-swap.sh $(SCRIPT)/c-swap
 
 go:
-	ln -sf $(PWD)/go-test-table.sh $(SCRIPT)/go-test-table
+	ln -sf $(PWD)/go-snip.sh $(SCRIPT)/gsnip
+	ln -sf $(PWD)/go-test-table-1.sh $(SCRIPT)/go-test-table-1
 	ln -sf $(PWD)/go-test-table-1.sh $(SCRIPT)/go-test-table-1
 
 cpp:

@@ -16,9 +16,15 @@ echo -e "${c}ledger -f joint.ledger bal --collapse${r}"
 echo -e "${g}# Balance report around the city tag${r}"
 echo -e "${c}ledger -f joint.ledger bal Expense --pivot "City"${r}"
 
+echo -e "${g}# Balance report of vegetable spending sorted by price${r}"
+echo -e "${c}ledger -f joint.ledger bal veg --sort \"amount\"${r}"
+
 echo -e ""
 echo -e "REGISTER"
 echo -e ""
+
+echo -e "${g}# Liability report for each month${r}"
+echo -e "${c}ledger -f joint.ledger reg Liability --monthly${r}"
 
 echo -e "${g}# Expenses for every month${r}"
 echo -e "${c}ledger -f joint.ledger reg expense --period \"every month\" --collapse${r}"
