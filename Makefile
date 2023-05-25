@@ -10,6 +10,7 @@ sh:
 	ln -sf $(PWD)/cheat-vim.sh $(SCRIPT)/cv
 	ln -sf $(PWD)/cheat-tmux.sh $(SCRIPT)/ct
 	ln -sf $(PWD)/cheat-ledger.sh $(SCRIPT)/cl
+	ln -sf $(PWD)/snip.sh $(SCRIPT)/snip
 
 zet:
 	ln -sf $(PWD)/journal-day.sh $(SCRIPT)/jd
@@ -51,6 +52,7 @@ cpp:
 rust:
 	ln -sf $(PWD)/rs-test.sh $(SCRIPT)/rs-test
 	ln -sf $(PWD)/rs-graph.sh $(SCRIPT)/rs-graph
+	ln -sf $(PWD)/rs-snip.sh $(SCRIPT)/rsnip
 
 snip:
 	ln -sf $(PWD)/bit-ops.sh $(SCRIPT)/bit-ops
