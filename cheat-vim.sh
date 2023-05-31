@@ -5,6 +5,12 @@ g="\033[0m" # Green
 r="\033[0m"    # Reset to default
 
 echo -e ""
+echo -e "DELETE"
+echo -e ""
+
+echo -e "${c}:.,\$d${r}  - ${g}delete from current to EOF${r}"
+
+echo -e ""
 echo -e "CHANGE"
 echo -e ""
 
