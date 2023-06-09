@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
 
 c="\033[0;35m" # Blue
-g="\033[0m" # Green
+g="\033[0m"    # Green
 r="\033[0m"    # Reset to default
+b="\e[1m"      # Bold
 
 echo -e ""
-echo -e "DELETE"
+echo -e "${b}RANGES${r}"
 echo -e ""
 
-echo -e "${c}:.,\$d${r}  - ${g}delete from current to EOF${r}"
+echo -e "${c}:.,\$d${r} - ${g}delete from current to EOF${r}"
 
 echo -e ""
-echo -e "CHANGE"
+echo -e "${b}CHANGE${r}"
 echo -e ""
 
 echo -e "${c}!ip${r}  - ${g}send the current paragraph to shell command${r}"
@@ -25,7 +26,7 @@ echo -e "${c}gqip${r} - ${g}wrap the current paragraph${r}"
 echo -e "${c}gqap${r} - ${g}wrap around the current paragraph${r}"
 
 echo -e ""
-echo -e "YANK"
+echo -e "${b}YANK${r}"
 echo -e ""
 
 echo -e "${c}yaf${r}  - ${g}yank current function${r}"
@@ -34,7 +35,7 @@ echo -e "${c}yip${r}  - ${g}yank current paragraph${r}"
 echo -e "${c}yif${r}  - ${g}yank current inner function${r}"
 
 echo -e ""
-echo -e "DELETE"
+echo -e "${b}DELETE${r}"
 echo -e ""
 
 echo -e "${c}dap${r}  - ${g}delete around current paragraph${r}"

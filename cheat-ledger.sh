@@ -5,9 +5,10 @@
 c="\033[0;35m" # Blue
 g="\033[0m" # Green
 r="\033[0m"    # Reset to default
+b="\e[1m"
 
 echo -e ""
-echo -e "BALANCE"
+echo -e "${b}BALANCE${r}"
 echo -e ""
 
 echo -e "${g}# Balanse sheet in collapsed display${r}"
@@ -20,7 +21,7 @@ echo -e "${g}# Balance report of vegetable spending sorted by price${r}"
 echo -e "${c}ledger -f joint.ledger bal veg --sort \"amount\"${r}"
 
 echo -e ""
-echo -e "REGISTER"
+echo -e "${b}REGISTER${r}"
 echo -e ""
 
 echo -e "${g}# Liability report for each month${r}"

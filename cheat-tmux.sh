@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
 c="\033[0;35m" # Blue
-g="\033[0m" # Green
+g="\033[0m"    # Green
 r="\033[0m"    # Reset to default
+b="\e[1m"      # Bold
 
 echo -e ""
-echo -e "WINDOW"
+echo -e "${b}WINDOW${r}"
 echo -e ""
 
-# Print the text
 echo -e "${c}C-b c${r}     - ${g}Create a new window${r}"
 echo -e "${c}C-b ,${r}     - ${g}Rename the current window${r}"
 echo -e "${c}C-b w${r}     - ${g}List all windows${r}"
@@ -16,7 +16,7 @@ echo -e "${c}C-b [0-9]${r} - ${g}Swtich to window number${r}"
 echo -e "${c}C-b &${r}     - ${g}Kill the current window${r}"
 
 echo -e ""
-echo -e "PANE"
+echo -e "${b}PANE${r}"
 echo -e ""
 
 echo -e "${c}C-b %${r}       - ${g}Split the current pane vertically${r}"
