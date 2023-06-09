@@ -1,6 +1,10 @@
 Bash shell scripts used for [Unix as an IDE](https://github.com/rubenvanstaden/zlib/blob/main/slipbox/202304061649.md).
 
-- Install all scripts
+## Scripts
+
+- `cheat-ledger.sh`: Print cheatsheet for [Ledger CLI](https://ledger-cli.org/) in terminal.
+
+## Installation
 
 ```shell
 : make install
