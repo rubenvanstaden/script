@@ -17,8 +17,6 @@ title:
 tags: ""
 ---
 
-## RefBox
-
 ---
 EOF
 }
