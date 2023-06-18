@@ -2,7 +2,8 @@
 
 [[ -n $1 ]] && cd $1 # go to provided folder or noop
 
-RG_DEFAULT_COMMAND="rg -i -l --hidden --no-ignore-vcs"
+RG_DEFAULT_COMMAND="rg -i -l"
+#RG_DEFAULT_COMMAND="rg -i -l --hidden --no-ignore-vcs"
 
 selected=$(
 FZF_DEFAULT_COMMAND="rg --files" fzf \

@@ -7,7 +7,7 @@ set -e
 http() {
     local link
     if [[ "$1" == "go" ]]; then
-        link="https://en.cppreference.com/w/"
+        link="https://go.dev/doc/effective_go"
     fi
     if [[ "$1" == "rust" ]]; then
         link="https://doc.rust-lang.org/1.69.0/std/index.html"
