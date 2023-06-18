@@ -1,4 +1,5 @@
 install:
+	ln -sf $(PWD)/search-file.sh $(SCRIPT)/sf
 	ln -sf $(PWD)/igr.sh $(SCRIPT)/igr
 	ln -sf $(PWD)/cheat-sheet.sh $(SCRIPT)/cheat
 	ln -sf $(PWD)/bashrc.sh $(SCRIPT)/rc
