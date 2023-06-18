@@ -6,10 +6,13 @@ set -e
 
 http() {
     local link
-    if [[ "$1" == "r" ]]; then
+    if [[ "$1" == "go" ]]; then
+        link="https://en.cppreference.com/w/"
+    fi
+    if [[ "$1" == "rust" ]]; then
         link="https://doc.rust-lang.org/1.69.0/std/index.html"
     fi
-    if [[ "$1" == "c" ]]; then
+    if [[ "$1" == "cpp" ]]; then
         link="https://en.cppreference.com/w/"
     fi
     open -a "$BROWSER" "$link"

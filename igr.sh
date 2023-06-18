@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-declare preview='bat --color=never --style=header,numbers -H {2} {1} | grep -C3 {q}'
+declare preview='bat --color=always --style=header,numbers -H {2} {1} | grep -C3 {q}'
 
 rg --color=always -n ${list_files:+-l} "$1" 2> /dev/null |
 fzf -d: \

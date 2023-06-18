@@ -1,4 +1,5 @@
 install:
+	ln -sf $(PWD)/igr.sh $(SCRIPT)/igr
 	ln -sf $(PWD)/cheat-sheet.sh $(SCRIPT)/cheat
 	ln -sf $(PWD)/bashrc.sh $(SCRIPT)/rc
 	ln -sf $(PWD)/reload.sh $(SCRIPT)/reload
