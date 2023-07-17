@@ -23,3 +23,5 @@ install:
 	ln -sf $(PWD)/script-new.sh $(SCRIPT)/sn
 	ln -sf $(PWD)/bit-ops.sh $(SCRIPT)/bit-ops
 	ln -sf $(PWD)/colors.sh $(SCRIPT)/colors
+	ln -sf $(PWD)/loc.sh $(SCRIPT)/loc
+	ln -sf $(PWD)/showfile.sh $(SCRIPT)/showfile
