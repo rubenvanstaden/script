@@ -6,7 +6,7 @@ install:
 	ln -sf $(PWD)/reload.sh $(SCRIPT)/reload
 	ln -sf $(PWD)/path.sh $(SCRIPT)/path
 	ln -sf $(PWD)/doc.sh $(SCRIPT)/doc
-	ln -sf $(PWD)/commenter.sh $(SCRIPT)/cmt
+	ln -sf $(PWD)/comment.sh $(SCRIPT)/cmt
 	ln -sf $(PWD)/extract.sh $(SCRIPT)/ex
 	ln -sf $(PWD)/cheat-vim.sh $(SCRIPT)/cv
 	ln -sf $(PWD)/cheat-tmux.sh $(SCRIPT)/ct
@@ -22,3 +22,4 @@ install:
 	ln -sf $(PWD)/sh-here.sh $(SCRIPT)/here
 	ln -sf $(PWD)/script-new.sh $(SCRIPT)/sn
 	ln -sf $(PWD)/bit-ops.sh $(SCRIPT)/bit-ops
+	ln -sf $(PWD)/colors.sh $(SCRIPT)/colors
