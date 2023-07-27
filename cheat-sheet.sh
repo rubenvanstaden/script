@@ -21,6 +21,7 @@ tmux() {
     echo -e "${boldon}PANE${boldoff}"
     echo -e ""
 
+    echo -e "${purple}C-b o${reset}       - ${reset}Go to the next pane${reset}"
     echo -e "${purple}C-b %${reset}       - ${reset}Split the current pane vertically${reset}"
     echo -e "${purple}C-b \"${reset}       - ${reset}Split the current pane horizontally${reset}"
     echo -e "${purple}C-b q${reset}       - ${reset}Show pane numbers, press number to go to that pane${reset}"
@@ -74,17 +75,35 @@ vi() {
     echo -e "${boldon}RANGES${boldoff}"
     echo -e ""
 
+    echo -e "${c}:%! filter${reset} - ${g}filter whole file${reset}"
+    echo -e "${c}:r !date${reset} - ${g}insert external command output${reset}"
     echo -e "${c}:.,\$d${reset} - ${g}delete from current to EOF${reset}"
+    echo -e "${c}:help ranges${reset} - ${g}help ranges${reset}"
+    echo -e "${c}:5,10 w /tmp/file${reset} - ${g}copy lines to new file${reset}"
+    echo -e "${c}:5,10 w >> /tmp/file${reset} - ${g}append lines to new file${reset}"
+
+    echo -e ""
+    echo -e "${boldon}BUFFER${boldoff}"
+    echo -e ""
+
+    echo -e "${purple}:bd${reset}  - ${reset}close current buffer${reset}"
+    echo -e "${purple}:ls${reset}  - ${reset}ls all open buffers${reset}"
 
     echo -e ""
     echo -e "${boldon}CHANGE${boldoff}"
     echo -e ""
 
+    echo -e "${purple}gI${reset}  - ${reset}insert start on line${reset}"
+    echo -e "${purple}U${reset}  - ${reset}undo all changes to the line${reset}"
+    echo -e "${purple}=ap${reset}  - ${reset}aline a paragraph${reset}"
     echo -e "${purple}!ip${reset}  - ${reset}send the current paragraph to shell command${reset}"
     echo -e "${purple}>ip${reset}  - ${reset}indent the current paragraph${reset}"
+    echo -e "${purple}>3j${reset}  - ${reset}indent three lines${reset}"
     echo -e "${purple}<ip${reset}  - ${reset}dedent the current paragraph${reset}"
     echo -e "${purple}ea ${reset}  - ${reset}append to current word${reset}"
     echo -e "${purple}cw ${reset}  - ${reset}change to end of current word${reset}"
+    echo -e "${purple}ci\"${reset}  - ${reset}delete quote content in line${reset}"
+    echo -e "${purple}ca\"${reset}  - ${reset}delete quote content AND quotes${reset}"
     echo -e "${purple}ciw${reset}  - ${reset}change current word${reset}"
     echo -e "${purple}caw${reset}  - ${reset}change around current word${reset}"
     echo -e "${purple}gqip${reset} - ${reset}wrap the current paragraph${reset}"
@@ -96,6 +115,7 @@ vi() {
 
     echo -e "${purple}yaf${reset}  - ${reset}yank current function${reset}"
     echo -e "${purple}yap${reset}  - ${reset}yank around current paragraph${reset}"
+    echo -e "${purple}yiw${reset}  - ${reset}yank current word${reset}"
     echo -e "${purple}yip${reset}  - ${reset}yank current paragraph${reset}"
     echo -e "${purple}yif${reset}  - ${reset}yank current inner function${reset}"
 
@@ -124,6 +144,10 @@ fi
 
 if [[ $1 == "tmux" ]]; then
     tmux
+fi
+
+if [[ $1 == "rust" ]]; then
+    rust
 fi
 
 exit 1
