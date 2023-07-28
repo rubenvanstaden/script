@@ -93,6 +93,8 @@ vi() {
     echo -e "${boldon}CHANGE${boldoff}"
     echo -e ""
 
+    echo -e "${purple}gCtl-a${reset}  - ${reset}increment all highlighted numbers${reset}"
+    echo -e "${purple}3Ctl-a${reset}  - ${reset}increment by 3${reset}"
     echo -e "${purple}gI${reset}  - ${reset}insert start on line${reset}"
     echo -e "${purple}U${reset}  - ${reset}undo all changes to the line${reset}"
     echo -e "${purple}=ap${reset}  - ${reset}aline a paragraph${reset}"
