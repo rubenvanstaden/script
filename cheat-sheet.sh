@@ -71,73 +71,67 @@ ledger() {
     }
 
 vi() {
-    echo -e ""
-    echo -e "${boldon}RANGES${boldoff}"
-    echo -e ""
+cat << END
 
-    echo -e "${c}:%! filter${reset} - ${g}filter whole file${reset}"
-    echo -e "${c}:r !date${reset} - ${g}insert external command output${reset}"
-    echo -e "${c}:.,\$d${reset} - ${g}delete from current to EOF${reset}"
-    echo -e "${c}:help ranges${reset} - ${g}help ranges${reset}"
-    echo -e "${c}:5,10 w /tmp/file${reset} - ${g}copy lines to new file${reset}"
-    echo -e "${c}:5,10 w >> /tmp/file${reset} - ${g}append lines to new file${reset}"
+${boldon}RANGES${boldoff}
 
-    echo -e ""
-    echo -e "${boldon}BUFFER${boldoff}"
-    echo -e ""
+${purple}:%! filter${reset}           - ${reset}filter whole file${reset}
+${purple}:r !date${reset}             - ${reset}insert external command output${reset}
+${purple}:.,\$d${reset}                - ${reset}delete from current to EOF${reset}
+${purple}:help ranges${reset}         - ${reset}help ranges${reset}
+${purple}:5,10 w /tmp/file${reset}    - ${reset}copy lines to new file${reset}
+${purple}:5,10 w >> /tmp/file${reset} - ${reset}append lines to new file${reset}
 
-    echo -e "${purple}:bd${reset}  - ${reset}close current buffer${reset}"
-    echo -e "${purple}:ls${reset}  - ${reset}ls all open buffers${reset}"
+${boldon}BUFFER${boldoff}
 
-    echo -e ""
-    echo -e "${boldon}CHANGE${boldoff}"
-    echo -e ""
+${purple}:bd${reset} - ${reset}close current buffer${reset}
+${purple}:ls${reset} - ${reset}ls all open buffers${reset}
 
-    echo -e "${purple}gCtl-a${reset}  - ${reset}increment all highlighted numbers${reset}"
-    echo -e "${purple}3Ctl-a${reset}  - ${reset}increment by 3${reset}"
-    echo -e "${purple}gI${reset}  - ${reset}insert start on line${reset}"
-    echo -e "${purple}U${reset}  - ${reset}undo all changes to the line${reset}"
-    echo -e "${purple}=ap${reset}  - ${reset}aline a paragraph${reset}"
-    echo -e "${purple}!ip${reset}  - ${reset}send the current paragraph to shell command${reset}"
-    echo -e "${purple}>ip${reset}  - ${reset}indent the current paragraph${reset}"
-    echo -e "${purple}>3j${reset}  - ${reset}indent three lines${reset}"
-    echo -e "${purple}<ip${reset}  - ${reset}dedent the current paragraph${reset}"
-    echo -e "${purple}ea ${reset}  - ${reset}append to current word${reset}"
-    echo -e "${purple}cw ${reset}  - ${reset}change to end of current word${reset}"
-    echo -e "${purple}ci\"${reset}  - ${reset}delete quote content in line${reset}"
-    echo -e "${purple}ca\"${reset}  - ${reset}delete quote content AND quotes${reset}"
-    echo -e "${purple}ciw${reset}  - ${reset}change current word${reset}"
-    echo -e "${purple}caw${reset}  - ${reset}change around current word${reset}"
-    echo -e "${purple}gqip${reset} - ${reset}wrap the current paragraph${reset}"
-    echo -e "${purple}gqap${reset} - ${reset}wrap around the current paragraph${reset}"
+${boldon}CHANGE${boldoff}
 
-    echo -e ""
-    echo -e "${boldon}YANK${boldoff}"
-    echo -e ""
+${purple}gCtl-a${reset} - ${reset}increment all highlighted numbers${reset}
+${purple}3Ctl-a${reset} - ${reset}increment by 3${reset}
+${purple}gI${reset}     - ${reset}insert start on line${reset}
+${purple}U${reset}      - ${reset}undo all changes to the line${reset}
+${purple}=ap${reset}    - ${reset}aline a paragraph${reset}
+${purple}!ip${reset}    - ${reset}send the current paragraph to shell command${reset}
+${purple}>ip${reset}    - ${reset}indent the current paragraph${reset}
+${purple}>3j${reset}    - ${reset}indent three lines${reset}
+${purple}<ip${reset}    - ${reset}dedent the current paragraph${reset}
+${purple}ea ${reset}    - ${reset}append to current word${reset}
+${purple}cw ${reset}    - ${reset}change to end of current word${reset}
+${purple}ci"${reset}    - ${reset}delete quote content in line${reset}
+${purple}ca"${reset}    - ${reset}delete quote content AND quotes${reset}
+${purple}ciw${reset}    - ${reset}change current word${reset}
+${purple}caw${reset}    - ${reset}change around current word${reset}
+${purple}gqip${reset}   - ${reset}wrap the current paragraph${reset}
+${purple}gqap${reset}   - ${reset}wrap around the current paragraph${reset}
 
-    echo -e "${purple}yaf${reset}  - ${reset}yank current function${reset}"
-    echo -e "${purple}yap${reset}  - ${reset}yank around current paragraph${reset}"
-    echo -e "${purple}yiw${reset}  - ${reset}yank current word${reset}"
-    echo -e "${purple}yip${reset}  - ${reset}yank current paragraph${reset}"
-    echo -e "${purple}yif${reset}  - ${reset}yank current inner function${reset}"
+${boldon}YANK${boldoff}
 
-    echo -e ""
-    echo -e "${boldon}DELETE${boldoff}"
-    echo -e ""
+${purple}yaf${reset} - ${reset}yank current function${reset}
+${purple}yap${reset} - ${reset}yank around current paragraph${reset}
+${purple}yiw${reset} - ${reset}yank current word${reset}
+${purple}yip${reset} - ${reset}yank current paragraph${reset}
+${purple}yif${reset} - ${reset}yank current inner function${reset}
 
-    echo -e "${purple}dap${reset}  - ${reset}delete around current paragraph${reset}"
-    echo -e "${purple}dap${reset}  - ${reset}delete around current paragraph${reset}"
-    echo -e "${purple}dip${reset}  - ${reset}delete current paragraph${reset}"
-    echo -e "${purple}diw${reset}  - ${reset}delete current word${reset}"
-    echo -e "${purple}daw${reset}  - ${reset}delete around current word${reset}"
-    echo -e "${purple}daW${reset}  - ${reset}delete around current larger word${reset}"
-    echo -e "${purple}dw ${reset}  - ${reset}delete to beginning of next word${reset}"
-    echo -e "${purple}daf${reset}  - ${reset}delete current function${reset}"
-    echo -e "${purple}dif${reset}  - ${reset}delete current inner function${reset}"
+${boldon}DELETE${boldoff}
+
+${purple}dap${reset} - ${reset}delete around current paragraph${reset}
+${purple}dap${reset} - ${reset}delete around current paragraph${reset}
+${purple}dip${reset} - ${reset}delete current paragraph${reset}
+${purple}diw${reset} - ${reset}delete current word${reset}
+${purple}daw${reset} - ${reset}delete around current word${reset}
+${purple}daW${reset} - ${reset}delete around current larger word${reset}
+${purple}dw ${reset} - ${reset}delete to beginning of next word${reset}
+${purple}daf${reset} - ${reset}delete current function${reset}
+${purple}dif${reset} - ${reset}delete current inner function${reset}
+
+END
 }
 
 if [[ $1 == "vi" ]]; then
-    vi
+    echo -e "$(vi)"
 fi
 
 if [[ $1 == "ledger" ]]; then
