@@ -25,3 +25,5 @@ install:
 	ln -sf $(PWD)/colors.sh $(SCRIPT)/colors
 	ln -sf $(PWD)/loc.sh $(SCRIPT)/loc
 	ln -sf $(PWD)/showfile.sh $(SCRIPT)/showfile
+	ln -sf $(PWD)/compress.sh $(SCRIPT)/cx
+	ln -sf $(PWD)/fmt-ledger.sh $(SCRIPT)/lgfmt
