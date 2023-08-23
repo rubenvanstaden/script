@@ -2,14 +2,12 @@
 
 set -e
 
-[[ -z $ZETTELKASTEN ]] && echo "ZETTELKASTEN env var not set" && exit 1
-
 fn() {
 
     local uuid
     uuid=$(date +'%Y%m%d%H%M')
 
-    local file="$ZETTELKASTEN/$uuid.md"
+    local file="$PWD/$uuid.md"
 
 cat >"$file" <<"EOF"
 ---

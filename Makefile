@@ -1,4 +1,6 @@
 install:
+	ln -sf $(PWD)/hurl.sh $(SCRIPT)/hurl
+	ln -sf $(PWD)/murl.sh $(SCRIPT)/murl
 	ln -sf $(PWD)/search-file.sh $(SCRIPT)/sf
 	ln -sf $(PWD)/igr.sh $(SCRIPT)/igr
 	ln -sf $(PWD)/cheat-sheet.sh $(SCRIPT)/cheat
@@ -27,3 +29,6 @@ install:
 	ln -sf $(PWD)/showfile.sh $(SCRIPT)/showfile
 	ln -sf $(PWD)/compress.sh $(SCRIPT)/cx
 	ln -sf $(PWD)/fmt-ledger.sh $(SCRIPT)/lgfmt
+	ln -sf $(PWD)/show-title.sh $(SCRIPT)/st
+	ln -sf $(PWD)/cf.sh $(SCRIPT)/cf
+	ln -sf $(PWD)/ff.sh $(SCRIPT)/ff

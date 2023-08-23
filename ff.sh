@@ -5,7 +5,8 @@
 # Usage: `ff` or `ff <folder>`.
 #
 [[ -n $1 ]] && cd $1 # go to provided folder or noop
-RG_DEFAULT_COMMAND="rg -i -l --hidden --no-ignore-vcs"
+
+RG_DEFAULT_COMMAND="rg -l"
 
 selected=$(
 FZF_DEFAULT_COMMAND="rg --files" fzf \
@@ -14,10 +15,9 @@ FZF_DEFAULT_COMMAND="rg --files" fzf \
   --ansi \
   --disabled \
   --reverse \
-  --bind "ctrl-a:select-all" \
-  --bind "f12:execute-silent:(subl -b {})" \
   --bind "change:reload:$RG_DEFAULT_COMMAND {q} || true" \
   --preview "rg -i --pretty --context 2 {q} {}" | cut -d":" -f1,2
+
 )
 
-[[ -n $selected ]] && subl $selected # open multiple files in editor
+[[ -n $selected ]] && "$EDITOR" $selected # open multiple files in editor

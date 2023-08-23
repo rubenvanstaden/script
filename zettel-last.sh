@@ -6,10 +6,8 @@
 
 set -e
 
-[[ -z $ZETTELKASTEN ]] && echo "ZETTELKASTEN env var not set" && exit 1
-
 fn() {
-    $EDITOR "$(ls -t1 "$ZETTELKASTEN" | head -n 1)"
+    $EDITOR "$(ls -t1 $PWD | head -n 1)"
 }
 
 fn

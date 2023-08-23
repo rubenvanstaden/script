@@ -81,6 +81,8 @@ ${purple}:.,\$d${reset}                - ${reset}delete from current to EOF${res
 ${purple}:help ranges${reset}         - ${reset}help ranges${reset}
 ${purple}:5,10 w /tmp/file${reset}    - ${reset}copy lines to new file${reset}
 ${purple}:5,10 w >> /tmp/file${reset} - ${reset}append lines to new file${reset}
+${purple}:%normal i//${reset} - ${reset}comment range of lines${reset}
+${purple}.,.+5 s/^/// ${reset} - ${reset}comment range of lines${reset}
 
 ${boldon}BUFFER${boldoff}
 
